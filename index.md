@@ -1,6 +1,6 @@
 # The New CSS Reset
 
-This new CSS reset is using the new CSS reset powers we got with the new global CSS reset keywords, 'unset' and 'revert' keywords, and with the new property of 'all' which can reset all properties combined.
+This new CSS reset uses the new CSS reset powers we got with the latest global CSS reset keywords('unset' and 'revert') and the unique property of 'all', which can reset all properties combined.
 
 [Download the Latest Version](https://raw.githubusercontent.com/elad2412/the-new-css-reset/main/css/reset.css)
 
