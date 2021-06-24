@@ -43,4 +43,5 @@ table{
 - [How Does CSS Work?](https://elad.medium.com/how-does-css-work-92fe7116916d)
 - [The CSS Keywords That No One Really Understands (Video)](https://www.youtube.com/watch?v=nnhUBRRhKW0)
 
+Made by [Elad Shechter (twitter)](https://twitter.com/eladsc)
 
