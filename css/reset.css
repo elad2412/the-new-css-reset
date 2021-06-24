@@ -19,12 +19,12 @@ ol, ul {
     list-style: none;
 }
 
-/* For images to not be able to exceed there container */
+/* For images to not be able to exceed their container */
 img {
     max-width: 100%;
 }
 
-/* collapse borders in tables */
+/* removes spacing between cells in tables */
 table{
     border-collapse: collapse;
 }
