@@ -1,2 +1,2 @@
 # The New CSS Reset
-New and simple CSS Reset. Using the new capabilities of CSS like the 'all' property and the 'unset' and 'revert' CSS reset keywords
+This new CSS reset is using the new CSS reset powers we got with the new global CSS reset keywords, ‘unset’ and ‘revert’ keywords, and with the new property of ‘all’ which can reset all properties combined.
