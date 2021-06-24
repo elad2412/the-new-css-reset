@@ -10,7 +10,7 @@ This new CSS reset uses the new CSS reset powers we got with the latest global C
 
 /* Remove all the styles of the "User-Agent-Stylesheet",
    except for the 'display' property */
-*:not(iframe, canvas, img, svg video):not(svg *){
+*:not(iframe, canvas, img, svg, video):not(svg *){
     all: unset;
     display: revert;
 }
