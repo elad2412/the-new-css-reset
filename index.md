@@ -38,3 +38,7 @@ table{
 }
 
 ```
+## Extensive Reading and Watching
+- [Understanding the “Initial”, “Inherit” and “Unset” CSS Keywords](https://elad.medium.com/understanding-the-initial-inherit-and-unset-css-keywords-2d70b7121695)
+- [How Does CSS Work?](https://elad.medium.com/how-does-css-work-92fe7116916d)
+- [The CSS Keywords That No One Really Understands (Video)](https://www.youtube.com/watch?v=nnhUBRRhKW0)
