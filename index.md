@@ -1,6 +1,10 @@
 # The New CSS Reset
 
-This new CSS reset uses the new CSS reset powers we got with the latest global CSS reset keywords('unset' and 'revert') and the unique property of 'all', which can reset all properties combined.
+This new CSS reset is using the new CSS features:
+- The global CSS reset keywords, ‘unset’ and ‘revert’ keywords.
+- The new property of ‘all’ which can reset all properties combined.
+- The :where() pseudo-class to rmeove specfity.
+- The :not() pseudo-class with multi arguments.
 
 [Download the Latest Version](https://raw.githubusercontent.com/elad2412/the-new-css-reset/main/css/reset.css)
 
@@ -38,6 +42,9 @@ table{
 }
 
 ```
+## Browsers Support
+All evergreen browsers (except Samsung Internet browser version 14, will be support in the next version).
+
 ## Extensive Reading and Watching
 - [Understanding the “Initial”, “Inherit” and “Unset” CSS Keywords](https://elad.medium.com/understanding-the-initial-inherit-and-unset-css-keywords-2d70b7121695)
 - [How Does CSS Work?](https://elad.medium.com/how-does-css-work-92fe7116916d)
