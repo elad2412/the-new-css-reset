@@ -5,5 +5,5 @@ This new CSS reset is using the new CSS features:
 - The :where() pseudo-class to rmeove specfity.
 - The :not() pseudo-class with multi arguments.
 
-## Browser Support
+## Browsers Support
 All evergreen browsers (except Samsung Internet browser version 14, will be support in the next version).
