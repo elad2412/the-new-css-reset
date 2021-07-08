@@ -1,5 +1,5 @@
 # The New CSS Reset
-This new CSS reset is using the new CSS features lek:
+This new CSS reset is using the new CSS features:
 - The global CSS reset keywords, ‘unset’ and ‘revert’ keywords
 - The new property of ‘all’ which can reset all properties combined.
 - The :where() pseudo-class to rmeove specfity.
