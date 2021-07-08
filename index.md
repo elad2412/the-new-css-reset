@@ -12,9 +12,8 @@ This new CSS reset is using the new CSS features:
 ```
 /*** The new CSS Reset - version 1.0.0 (last updated 28.4.2021) ***/
 
-/* Remove all the styles of the "User-Agent-Stylesheet",
-   except for the 'display' property */
-*:not(iframe, canvas, img, svg, video):not(svg *){
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)){
     all: unset;
     display: revert;
 }
@@ -40,6 +39,7 @@ img {
 table{
     border-collapse: collapse;
 }
+
 
 ```
 ## Browsers Support
