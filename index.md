@@ -16,7 +16,7 @@ In case you want the default style of the browser of a specific HTML element bac
 input[type="checkbox"],
 input[type="radio"]{
     all: revert;
-    }
+}
  ```
 
 [Download the Latest Version](https://raw.githubusercontent.com/elad2412/the-new-css-reset/main/css/reset.css)
