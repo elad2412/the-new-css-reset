@@ -1,7 +1,7 @@
 /*** The new CSS Reset - version 1.0.0 (last updated 8.7.2021) ***/
 
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe, canvas, img, svg, video):not(svg *)){
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
     all: unset;
     display: revert;
 }
@@ -9,7 +9,7 @@
 /* Preferred box-sizing value */
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
 }
 
@@ -24,6 +24,6 @@ img {
 }
 
 /* removes spacing between cells in tables */
-table{
+table {
     border-collapse: collapse;
 }
