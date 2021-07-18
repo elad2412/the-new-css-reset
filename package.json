@@ -1,0 +1,23 @@
+{
+  "name": "the-new-css-reset",
+  "version": "1.0.0",
+  "description": "the new CSS reset, using new css features",
+  "main": "css/reset.css",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elad2412/the-new-css-reset.git"
+  },
+  "keywords": [
+    "css",
+    "css-reset"
+  ],
+  "author": "Elad Shechter",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elad2412/the-new-css-reset/issues"
+  },
+  "homepage": "https://github.com/elad2412/the-new-css-reset#readme"
+}
