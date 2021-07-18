@@ -14,9 +14,18 @@ This CSS reset removes all the default styles which we are getting on specific H
 In case you want the default style of the browser of a specific HTML element back, you can revert back to the default styles of the browser. For example:
 ```
 input[type="checkbox"],
-input[type="radio"]{
+input[type="radio"] {
     all: revert;
 }
+ ```
+ 
+ or all input elements:
+ ```
+ input,
+ textarea,
+ select {
+    all: revert;
+ }
  ```
 
 [Download the Latest Version](https://raw.githubusercontent.com/elad2412/the-new-css-reset/main/css/reset.css)
