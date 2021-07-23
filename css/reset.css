@@ -6,11 +6,6 @@
     display: revert;
 }
 
-/* revert the 'white-space' property for textarea elements on Safari */
-textarea {
-    white-space: revert;
-}
-
 /* Preferred box-sizing value */
 *,
 *::before,
@@ -31,4 +26,9 @@ img {
 /* removes spacing between cells in tables */
 table {
     border-collapse: collapse;
+}
+
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
 }
