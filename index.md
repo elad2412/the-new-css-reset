@@ -72,7 +72,7 @@ textarea {
 
 ```
 ## Browser Support
-All evergreen browsers (except Samsung Internet browser version 14, will be support in the next version).
+All evergreen browsers.
 
 ## Extensive Reading and Watching
 - [Understanding the “Initial”, “Inherit” and “Unset” CSS Keywords](https://elad.medium.com/understanding-the-initial-inherit-and-unset-css-keywords-2d70b7121695)
