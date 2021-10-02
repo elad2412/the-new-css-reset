@@ -32,10 +32,10 @@ input[type="radio"] {
 
 ## How it Looks and Works
 ```
-/*** The new CSS Reset - version 1.0.0 (last updated 8.7.2021) ***/
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
 
 /* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe, canvas, img, svg, video):not(svg *)){
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
     all: unset;
     display: revert;
 }
@@ -43,11 +43,14 @@ input[type="radio"] {
 /* Preferred box-sizing value */
 *,
 *::before,
-*::after{
+*::after {
     box-sizing: border-box;
 }
 
-/* Remove list styles (bullets/numbers) */
+/*
+    Remove list styles (bullets/numbers)
+    in case you use it combine with normalize.css
+*/
 ol, ul {
     list-style: none;
 }
@@ -58,10 +61,14 @@ img {
 }
 
 /* removes spacing between cells in tables */
-table{
+table {
     border-collapse: collapse;
 }
 
+/* revert the 'white-space' property for textarea elements on Safari */
+textarea {
+    white-space: revert;
+}
 
 ```
 ## Browser Support
