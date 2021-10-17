@@ -40,4 +40,9 @@ import "the-new-css-reset/css/reset.css"
 ```
 
 ## Browser Support
-All evergreen browsers (except Samsung Internet browser version 14, will be supported in the next version).
+All evergreen browsers 
+- Chrome, Edge: version 88+
+- FireFox: version 84+
+- Safari/iOS browsers: version 14+
+- Opera: version 75+
+- Samsung Browser: version 15+
