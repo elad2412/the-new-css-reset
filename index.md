@@ -29,6 +29,7 @@ input[type="radio"] {
  ```
 
 [Download the Latest Version](https://raw.githubusercontent.com/elad2412/the-new-css-reset/main/css/reset.css)
+**Enter**
 [NPM Package](https://www.npmjs.com/package/the-new-css-reset)
 
 ## How it Looks and Works
