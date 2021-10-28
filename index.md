@@ -33,10 +33,13 @@ input[type="radio"] {
 
 ## How it Looks and Works
 ```
-/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+/*** The new CSS Reset - version 1.3.1 (last updated 28.10.2021) ***/
 
-/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
-*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+/*
+    Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
+    - The "symbol *" part is to solve Firefox SVG sprite bug
+ */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
     all: unset;
     display: revert;
 }
@@ -48,10 +51,7 @@ input[type="radio"] {
     box-sizing: border-box;
 }
 
-/*
-    Remove list styles (bullets/numbers)
-    in case you use it combine with normalize.css
-*/
+/* Remove list styles (bullets/numbers) */
 ol, ul {
     list-style: none;
 }
