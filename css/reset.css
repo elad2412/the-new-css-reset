@@ -17,7 +17,7 @@
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul {
+ol, ul, menu {
     list-style: none;
 }
 
