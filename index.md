@@ -33,7 +33,7 @@ input[type="radio"] {
 
 ## How it Looks and Works
 ```
-/*** The new CSS Reset - version 1.4.0 (last updated 16.11.2021) ***/
+/*** The new CSS Reset - version 1.4.2 (last updated 30.11.2021) ***/
 
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
@@ -52,7 +52,7 @@ input[type="radio"] {
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul {
+ol, ul, menu {
     list-style: none;
 }
 
@@ -74,6 +74,7 @@ textarea {
 /* revert for bug in Chromium browsers
    - fix for the content editable attribute will work properly. */
 :where([contenteditable]){
+    -moz-user-modify: read-write;
     -webkit-user-modify: read-write;
     overflow-wrap: break-word;
     -webkit-line-break: after-white-space;
