@@ -33,7 +33,7 @@ input[type="radio"] {
 
 ## How it Looks and Works
 ```
-/*** The new CSS Reset - version 1.4.2 (last updated 30.11.2021) ***/
+/*** The new CSS Reset - version 1.4.3 (last updated 19.12.2021) ***/
 
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
@@ -69,6 +69,12 @@ table {
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
     white-space: revert;
+}
+
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]){
+    display:none;
 }
 
 /* revert for bug in Chromium browsers
