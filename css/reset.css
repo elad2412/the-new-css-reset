@@ -36,6 +36,12 @@ textarea {
     white-space: revert;
 }
 
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]){
+    display:none;
+}
+
 /* revert for bug in Chromium browsers
    - fix for the content editable attribute will work properly. */
 :where([contenteditable]){
