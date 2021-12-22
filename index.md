@@ -33,7 +33,7 @@ input[type="radio"] {
 
 ## How it Looks and Works
 ```
-/*** The new CSS Reset - version 1.4.3 (last updated 19.12.2021) ***/
+/*** The new CSS Reset - version 1.4.4 (last updated 22.12.2021) ***/
 
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
@@ -84,6 +84,11 @@ textarea {
     -webkit-user-modify: read-write;
     overflow-wrap: break-word;
     -webkit-line-break: after-white-space;
+}
+
+/* apply back the draggable feature - exist only in Chromium and Safari */
+:where([draggable="true"]) {
+    -webkit-user-drag: element;
 }
 ```
 ## Browser Support
