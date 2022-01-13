@@ -33,7 +33,7 @@ input[type="radio"] {
 
 ## How it Looks and Works
 ```
-/*** The new CSS Reset - version 1.4.4 (last updated 22.12.2021) ***/
+/*** The new CSS Reset - version 1.4.5 (last updated 13.1.2022) ***/
 
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
@@ -49,6 +49,11 @@ input[type="radio"] {
 *::before,
 *::after {
     box-sizing: border-box;
+}
+
+/* Reapply the pointer cursor for anchor tags */
+a {
+    cursor: revert;
 }
 
 /* Remove list styles (bullets/numbers) */
