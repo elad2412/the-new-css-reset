@@ -16,6 +16,11 @@
     box-sizing: border-box;
 }
 
+/* Reapply the pointer cursor for anchor tags */
+a {
+    cursor: revert;
+}
+
 /* Remove list styles (bullets/numbers) */
 ol, ul, menu {
     list-style: none;
