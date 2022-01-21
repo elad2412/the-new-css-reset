@@ -30,7 +30,7 @@ input[type="radio"] {
 [Download the Latest Version](https://raw.githubusercontent.com/elad2412/the-new-css-reset/main/css/reset.css)
 
 ## NPM and How to Use?
-The package name at NPM is 'the-new-css-reset'.
+The package name on NPM is 'the-new-css-reset'.
 
 Import ```/css/reset.css``` before the regular styles of the project.
 
