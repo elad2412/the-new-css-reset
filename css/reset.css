@@ -1,4 +1,4 @@
-/*** The new CSS Reset - version 1.4.5 (last updated 13.1.2022) ***/
+/*** The new CSS Reset - version 1.4.6 (last updated 27.1.2022) ***/
 
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
@@ -17,7 +17,7 @@
 }
 
 /* Reapply the pointer cursor for anchor tags */
-a {
+a, button {
     cursor: revert;
 }
 
@@ -39,6 +39,12 @@ table {
 /* revert the 'white-space' property for textarea elements on Safari */
 textarea {
     white-space: revert;
+}
+
+/* minimum style to allow to style meter element */
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
 }
 
 /* fix the feature of 'hidden' attribute.
