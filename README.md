@@ -39,7 +39,7 @@ In a React project, insert it to the main entry file:
 import "the-new-css-reset/css/reset.css"
 ```
 
-### Accessibility Recommendation
+## Accessibility Recommendation
 
 To keep your website accessibly, don't forget to take care of the ```:focus``` states.
 ```css
