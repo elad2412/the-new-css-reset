@@ -43,12 +43,12 @@ import "the-new-css-reset/css/reset.css"
 
 To keep your website accessibly, don't forget to take care of the ```:focus``` states.
 ```css
-:focus{ /* focus stylse */ }
+:focus { /* focus stylse */ }
 
 /* or/and */
 
 /* show focus only when using keybored */
-:focus-visible
+:focus-visible { /* keyboard focus stylse */ }
 ```
 
 ## Browser Support
