@@ -47,8 +47,7 @@ To keep your website accessibly, don't forget to take care of the ```:focus``` s
 
 /* or/and */
 
-/* show focus only when using keybored */
-:focus-visible { /* keyboard focus styles */ }
+:focus-visible { /* keyboard only focus styles */ }
 ```
 
 ## Browser Support
