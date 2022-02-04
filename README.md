@@ -39,6 +39,17 @@ In a React project, insert it to the main entry file:
 import "the-new-css-reset/css/reset.css"
 ```
 
+## Accessibility Recommendation
+
+To keep your website accessibly, don't forget to take care of the ```:focus``` states.
+```css
+:focus { /* focus styles */ }
+
+/* or/and */
+
+:focus-visible { /* keyboard only focus styles */ }
+```
+
 ## Browser Support
 All evergreen browsers 
 - Chrome, Edge: version 88+
