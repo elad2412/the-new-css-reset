@@ -33,7 +33,10 @@ input[type="radio"] {
 
 ## How it Looks and Works
 ```
-/*** The new CSS Reset - version 1.4.5 (last updated 13.1.2022) ***/
+/***
+    The new CSS reset - version 1.4.9 (last updated 11.2.2022)
+    GitHub page: https://github.com/elad2412/the-new-css-reset
+***/
 
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
@@ -52,7 +55,7 @@ input[type="radio"] {
 }
 
 /* Reapply the pointer cursor for anchor tags */
-a {
+a, button {
     cursor: revert;
 }
 
@@ -76,15 +79,26 @@ textarea {
     white-space: revert;
 }
 
+/* minimum style to allow to style meter element */
+meter {
+    -webkit-appearance: revert;
+    appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder {
+    all: unset;
+}
+
 /* fix the feature of 'hidden' attribute.
    display:revert; revert to element instead of attribute */
-:where([hidden]){
-    display:none;
+:where([hidden]) {
+    display: none;
 }
 
 /* revert for bug in Chromium browsers
    - fix for the content editable attribute will work properly. */
-:where([contenteditable]){
+:where([contenteditable]) {
     -moz-user-modify: read-write;
     -webkit-user-modify: read-write;
     overflow-wrap: break-word;
