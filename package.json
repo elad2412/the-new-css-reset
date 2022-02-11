@@ -1,6 +1,6 @@
 {
   "name": "the-new-css-reset",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "description": "the new CSS reset, using new css features",
   "main": "css/reset.css",
   "scripts": {
