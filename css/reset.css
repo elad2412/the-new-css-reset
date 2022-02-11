@@ -1,5 +1,5 @@
 /***
-    The new CSS reset - version 1.4.7 (last updated 27.1.2022)
+    The new CSS reset - version 1.4.8 (last updated 11.2.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -48,6 +48,11 @@ textarea {
 meter {
     -webkit-appearance: revert;
     appearance: revert;
+}
+
+/* reset default text opacity of input placeholder */
+::placeholder{
+    all:unset;
 }
 
 /* fix the feature of 'hidden' attribute.
