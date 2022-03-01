@@ -34,7 +34,7 @@ input[type="radio"] {
 ## How it Looks and Works
 ```
 /***
-    The new CSS reset - version 1.4.9 (last updated 11.2.2022)
+    The new CSS reset - version 1.5.0 (last updated 11.2.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -87,7 +87,7 @@ meter {
 
 /* reset default text opacity of input placeholder */
 ::placeholder {
-    all: unset;
+    color: unset;
 }
 
 /* fix the feature of 'hidden' attribute.
