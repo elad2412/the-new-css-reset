@@ -34,7 +34,7 @@ input[type="radio"] {
 ## How it Looks and Works
 ```
 /***
-    The new CSS reset - version 1.5.0 (last updated 11.2.2022)
+    The new CSS reset - version 1.5.1 (last updated 1.3.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
