@@ -34,7 +34,7 @@ input[type="radio"] {
 ## How it Looks and Works
 ```
 /***
-    The new CSS reset - version 1.5.1 (last updated 1.3.2022)
+    The new CSS reset - version 1.6.0 (last updated 29.4.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -42,7 +42,7 @@ input[type="radio"] {
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
  */
-*:where(:not(iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
     all: unset;
     display: revert;
 }
