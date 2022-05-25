@@ -1,5 +1,5 @@
 /***
-    The new CSS reset - version 1.6.0 (last updated 29.4.2022)
+    The new CSS reset - version 1.6.1 (last updated 25.5.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -63,7 +63,7 @@ meter {
 
 /* revert for bug in Chromium browsers
    - fix for the content editable attribute will work properly. */
-:where([contenteditable]) {
+:where([contenteditable]:not([contenteditable="false"])) {
     -moz-user-modify: read-write;
     -webkit-user-modify: read-write;
     overflow-wrap: break-word;
