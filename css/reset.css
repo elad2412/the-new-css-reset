@@ -1,5 +1,5 @@
 /***
-    The new CSS reset - version 1.6.1 (last updated 25.5.2022)
+    The new CSS reset - version 1.7.0 (last updated 23.6.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -37,6 +37,11 @@ img {
 /* removes spacing between cells in tables */
 table {
     border-collapse: collapse;
+}
+
+/* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
+input ,textarea {
+    -webkit-user-select: auto;
 }
 
 /* revert the 'white-space' property for textarea elements on Safari */
