@@ -8,7 +8,7 @@ This new CSS reset is using the new CSS features:
 ## What is the-new-css-reset resetting?
 This CSS reset is built from the understanding that we don’t want to use default styles we are getting from the browsers, except the ‘display’ property.
 
-This CSS reset removes all the default styles which we are getting on specific HTML elements except the ‘display’ property, as I already mentioned, and special HTML elements like ```iframe```, ```canvas```, ```img```, ```svg```, and ```video```.
+This CSS reset removes all the default styles which we are getting on specific HTML elements except the ‘display’ property, as I already mentioned, and special HTML elements like ```iframe```, ```canvas```, ```img```, ```svg```, ```video```, and ```audio```.
 
 In case you want the default style of the browser of a specific HTML element back, you can revert back to the default styles of the browser. For example:
 ```css
