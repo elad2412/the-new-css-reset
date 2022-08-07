@@ -12,7 +12,7 @@ This CSS reset is built from the understanding we don't want to use the default 
 This CSS reset removes all the default styles which we are getting on specific HTML elements except the 'display' property, as I already mention, and except special HTML elements like iframe, canvas, img, svg, video.
 
 In case you want the default style of the browser of a specific HTML element back, you can revert back to the default styles of the browser. For example:
-```
+```css
 input[type="checkbox"],
 input[type="radio"] {
     all: revert;
@@ -20,7 +20,7 @@ input[type="radio"] {
  ```
  
  or all input elements:
- ```
+ ```css
  input,
  textarea,
  select {
@@ -34,7 +34,7 @@ input[type="radio"] {
 ## How it Looks and Works
 ```css
 /***
-    The new CSS reset - version 1.7.2 (last updated 23.6.2022)
+    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -42,7 +42,7 @@ input[type="radio"] {
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
  */
-*:where(:not(html, iframe, canvas, img, svg, video):not(svg *, symbol *)) {
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
     all: unset;
     display: revert;
 }
