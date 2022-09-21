@@ -25,7 +25,7 @@ a, button {
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu {
+ol, ul, menu, summary {
     list-style: none;
 }
 
