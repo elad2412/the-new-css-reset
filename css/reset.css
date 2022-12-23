@@ -1,5 +1,5 @@
 /***
-    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    The new CSS reset - version 1.8.0 (last updated 23.12.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -55,6 +55,11 @@ meter {
     appearance: revert;
 }
 
+/* preformatted text - use only for this feature */
+pre {
+    all: revert;
+}
+
 /* reset default text opacity of input placeholder */
 ::placeholder {
     color: unset;
@@ -81,3 +86,9 @@ meter {
 :where([draggable="true"]) {
     -webkit-user-drag: element;
 }
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+    all: revert;
+}
+
