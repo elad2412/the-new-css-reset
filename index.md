@@ -34,7 +34,7 @@ input[type="radio"] {
 ## How it Looks and Works
 ```css
 /***
-    The new CSS reset - version 1.7.3 (last updated 7.8.2022)
+    The new CSS reset - version 1.8.2 (last updated 23.12.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -66,7 +66,8 @@ ol, ul, menu {
 
 /* For images to not be able to exceed their container */
 img {
-    max-width: 100%;
+    max-inline-size: 100%;
+    max-block-size: 100%;
 }
 
 /* removes spacing between cells in tables */
@@ -90,9 +91,19 @@ meter {
     appearance: revert;
 }
 
+/* preformatted text - use only for this feature */
+pre {
+    all: revert;
+}
+
 /* reset default text opacity of input placeholder */
 ::placeholder {
     color: unset;
+}
+
+/* remove default dot (•) sign */
+::marker {
+    content: "";
 }
 
 /* fix the feature of 'hidden' attribute.
@@ -116,14 +127,20 @@ meter {
 :where([draggable="true"]) {
     -webkit-user-drag: element;
 }
+
+/* Revert Modal native behavior */
+:where(dialog:modal) {
+    all: revert;
+}
+
+
 ```
 ## Browser Support
 All evergreen browsers 
-- Chrome, Edge: version 88+
-- FireFox: version 84+
-- Safari/iOS browsers: version 14+
-- Opera: version 75+
-- Samsung Browser: version 15+
+
+![Chrome](https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png) | ![Edge](https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png) | ![Firefox](https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png) | ![Safari](https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png) | ![Opera](https://raw.githubusercontent.com/alrra/browser-logos/master/src/opera/opera_48x48.png) | ![Samsung Internet](https://raw.githubusercontent.com/alrra/browser-logos/master/src/samsung-internet/samsung-internet_48x48.png)
+--- | --- | --- | --- | --- | --- |
+88+ ✔ | 88+ ✔ | 84+ ✔ | 14+ ✔ | 75+ ✔ | 15+ ✔ |
 
 ## Extensive Reading and Watching
 - [Understanding the “Initial”, “Inherit” and “Unset” CSS Keywords](https://elad.medium.com/understanding-the-initial-inherit-and-unset-css-keywords-2d70b7121695)
