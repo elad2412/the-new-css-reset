@@ -1,5 +1,5 @@
 /***
-    The new CSS reset - version 1.8.1 (last updated 23.12.2022)
+    The new CSS reset - version 1.8.2 (last updated 23.12.2022)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -31,7 +31,8 @@ ol, ul, menu {
 
 /* For images to not be able to exceed their container */
 img {
-    max-width: 100%;
+    max-inline-size: 100%;
+    max-block-size: 100%;
 }
 
 /* removes spacing between cells in tables */
