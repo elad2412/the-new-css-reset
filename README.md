@@ -20,7 +20,7 @@ This package is built with the understanding that we don’t want to use default
 1) Import ```/css/reset.css``` before the regular styles of the project.
 2) Include the following snippet in one of the JavaScript/TypeScript entry files:
 ```js
-import "the-new-css-reset/css/reset.css;"
+import "the-new-css-reset/css/reset.css";
 ```
 
 ## Want to exclude some of the resets?
