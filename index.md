@@ -34,7 +34,7 @@ input[type="radio"] {
 ## How it Looks and Works
 ```css
 /***
-    The new CSS reset - version 1.8.2 (last updated 23.12.2022)
+    The new CSS reset - version 1.8.3 (last updated 21.1.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -103,7 +103,7 @@ pre {
 
 /* remove default dot (•) sign */
 ::marker {
-    content: "";
+    content: initial;
 }
 
 /* fix the feature of 'hidden' attribute.
@@ -132,7 +132,6 @@ pre {
 :where(dialog:modal) {
     all: revert;
 }
-
 
 ```
 ## Browser Support
