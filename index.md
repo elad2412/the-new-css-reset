@@ -34,7 +34,7 @@ input[type="radio"] {
 ## How it Looks and Works
 ```css
 /***
-    The new CSS reset - version 1.8.3 (last updated 21.1.2023)
+    The new CSS reset - version 1.8.4 (last updated 14.2.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -92,7 +92,7 @@ meter {
 }
 
 /* preformatted text - use only for this feature */
-pre {
+:where(pre) {
     all: revert;
 }
 
@@ -132,7 +132,6 @@ pre {
 :where(dialog:modal) {
     all: revert;
 }
-
 ```
 ## Browser Support
 All evergreen browsers 
