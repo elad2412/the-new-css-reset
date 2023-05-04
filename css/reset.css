@@ -10,10 +10,19 @@
 *:where(:not(
     html,
     iframe, canvas,
-    img, svg, video, audio
+    img, svg, video, audio,
+    input, textarea, select, button
   ):not(svg *, symbol *)) {
     all: unset;
     display: revert;
+}
+
+/* Reset form elements while keeping essential ui styles */
+:where(input, textarea, select, option, button, optgroup ) {
+    all: revert;
+    margin: unset;
+    font: unset;
+    appearance: auto;
 }
 
 /* Reapply the pointer cursor for anchor tags */
