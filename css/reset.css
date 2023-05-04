@@ -11,7 +11,8 @@
     html,
     iframe, canvas,
     img, svg, video, audio,
-    input, textarea, select, button
+    input, textarea, select, button,
+    table, caption, tbody, tfoot, thead, tr, th, td
   ):not(svg *, symbol *)) {
     all: unset;
     display: revert;
@@ -23,6 +24,16 @@
     margin: unset;
     font: unset;
     appearance: auto;
+}
+
+/* resets table styles nicely so html attribute features are still preserved */
+:where(table, caption, tbody, tfoot, thead, tr, th, td) {
+    margin: unset;
+    padding: unset;
+    border:unset;
+    background: unset;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Reapply the pointer cursor for anchor tags */
