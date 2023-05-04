@@ -11,7 +11,8 @@
     html,
     iframe, canvas,
     img, svg, video, audio,
-    input, textarea, select, button
+    input, textarea, select, button,
+    table, caption, tbody, tfoot, thead, tr, th, td
   ):not(svg *, symbol *)) {
     all: unset;
     display: revert;
@@ -23,6 +24,16 @@
     margin: unset;
     font: unset;
     appearance: auto;
+}
+
+/* resets table styles nicely so html attribute features are still preserved */
+:where(table, caption, tbody, tfoot, thead, tr, th, td) {
+    margin: unset;
+    padding: unset;
+    border:unset;
+    background: unset;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -39,11 +50,6 @@ ol, ul, menu {
 img {
     max-inline-size: 100%;
     max-block-size: 100%;
-}
-
-/* removes spacing between cells in tables */
-table {
-    border-collapse: collapse;
 }
 
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
