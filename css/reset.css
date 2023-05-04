@@ -16,13 +16,6 @@
     display: revert;
 }
 
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
 /* Reapply the pointer cursor for anchor tags */
 a, button {
     cursor: revert;
@@ -100,4 +93,13 @@ meter {
 /* Revert Modal native behavior */
 :where(dialog:modal) {
     all: revert;
+}
+
+
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
