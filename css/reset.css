@@ -9,16 +9,33 @@
     - The "symbol *" part is to solve Firefox SVG sprite bug
     - The "html" attribute is exclud, because otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
  */
-*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+*:where(:not(
+    html,
+    iframe, canvas,
+    img, svg, video, audio,
+    input, textarea, select, button,
+    table, caption, tbody, tfoot, thead, tr, th, td
+  ):not(svg *, symbol *)) {
     all: unset;
     display: revert;
 }
 
-/* Preferred box-sizing value */
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
+/* Reset form elements while keeping essential ui styles */
+:where(input, textarea, select, button, option, optgroup ) {
+    all: revert;
+    margin: unset;
+    font: unset;
+    appearance: auto;
+}
+
+/* resets table styles nicely so html attribute features are still preserved */
+:where(table, caption, tbody, tfoot, thead, tr, th, td) {
+    margin: unset;
+    padding: unset;
+    border:unset;
+    background: unset;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /* Reapply the pointer cursor for anchor tags */
@@ -35,11 +52,6 @@ ol, ul, menu {
 img {
     max-inline-size: 100%;
     max-block-size: 100%;
-}
-
-/* removes spacing between cells in tables */
-table {
-    border-collapse: collapse;
 }
 
 /* Safari - solving issue when using user-select:none on the <body> text input doesn't working */
@@ -98,4 +110,13 @@ meter {
 /* Revert Modal native behavior */
 :where(dialog:modal) {
     all: revert;
+}
+
+
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
 }
