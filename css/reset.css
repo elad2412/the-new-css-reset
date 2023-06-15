@@ -7,7 +7,7 @@
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property
     - The "symbol *" part is to solve Firefox SVG sprite bug
-    - The "html" element is exclud, because otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
+    - The "html" element is exclude, because otherwise a bug in Chrome breaks the CSS hyphens property (https://github.com/elad2412/the-new-css-reset/issues/36)
  */
 *:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
     all: unset;
