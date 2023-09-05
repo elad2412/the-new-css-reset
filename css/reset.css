@@ -20,6 +20,12 @@
     box-sizing: border-box;
 }
 
+/* Set the line heights */
+body,
+body * {
+    line-height: 1;
+}
+
 /* Reapply the pointer cursor for anchor tags */
 a, button {
     cursor: revert;
