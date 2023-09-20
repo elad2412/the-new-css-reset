@@ -1,5 +1,5 @@
 /***
-    The new CSS reset - version 1.10 (last updated 20.9.2023)
+    The new CSS reset - version 1.11 (last updated 20.9.2023)
     GitHub page: https://github.com/elad2412/the-new-css-reset
 ***/
 
@@ -67,6 +67,7 @@ meter {
 /* preformatted text - use only for this feature */
 :where(pre) {
     all: revert;
+    box-sizing: border-box;
 }
 
 /* reset default text opacity of input placeholder */
@@ -104,4 +105,5 @@ meter {
 /* Revert Modal native behavior */
 :where(dialog:modal) {
     all: revert;
+    box-sizing: border-box;
 }
