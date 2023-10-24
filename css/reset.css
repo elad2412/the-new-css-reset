@@ -33,7 +33,7 @@ a, button {
 }
 
 /* Remove list styles (bullets/numbers) */
-ol, ul, menu {
+ol, ul, menu, summary {
     list-style: none;
 }
 
@@ -73,11 +73,6 @@ meter {
 /* reset default text opacity of input placeholder */
 ::placeholder {
     color: unset;
-}
-
-/* remove default dot (•) sign */
-::marker {
-    content: initial;
 }
 
 /* fix the feature of 'hidden' attribute.
