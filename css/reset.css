@@ -75,9 +75,10 @@ meter {
     color: unset;
 }
 
-/* fix the feature of 'hidden' attribute.
-   display:revert; revert to element instead of attribute */
-:where([hidden]) {
+/* - Fix the feature of 'hidden' attribute.
+    - display:revert; revert to element instead of attribute
+   - Remove details summary webkit styles */
+:where([hidden]), details summary::-webkit-details-marker {
     display: none;
 }
 
