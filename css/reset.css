@@ -75,10 +75,9 @@ meter {
     color: unset;
 }
 
-/* - Fix the feature of 'hidden' attribute.
-    - display:revert; revert to element instead of attribute
-   - Remove details summary webkit styles */
-:where([hidden]), summary::-webkit-details-marker {
+/* fix the feature of 'hidden' attribute.
+   display:revert; revert to element instead of attribute */
+:where([hidden]) {
     display: none;
 }
 
@@ -102,4 +101,9 @@ meter {
 :where(dialog:modal) {
     all: revert;
     box-sizing: border-box;
+}
+
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+    display: none;
 }
