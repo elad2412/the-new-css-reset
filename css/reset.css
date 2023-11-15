@@ -102,3 +102,8 @@ meter {
     all: revert;
     box-sizing: border-box;
 }
+
+/* Remove details summary webkit styles */
+::-webkit-details-marker {
+    display: none;
+}
