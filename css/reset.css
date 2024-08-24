@@ -37,6 +37,11 @@ ol, ul, menu, summary {
     list-style: none;
 }
 
+/* Firefox: solve issue where nested ordered lists continue numbering from parent (https://bugzilla.mozilla.org/show_bug.cgi?id=1881517) */
+ol {
+    counter-reset: revert;
+}
+
 /* For images to not be able to exceed their container */
 img {
     max-inline-size: 100%;
