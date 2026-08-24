@@ -13,6 +13,22 @@
     display: revert;
 }
 
+/*
+    Reapply the content language that the 'all: unset' above removes
+    - Chromium picks the hyphenation dictionary from '-webkit-locale', an inherited property whose
+      initial value 'auto' reads the 'lang' attribute. 'all' resets it, so without this rule every
+      element inherits the locale of <html> and a 'lang' on a subtree stops selecting a dictionary
+      (https://github.com/elad2412/the-new-css-reset/issues/94)
+    - 'auto', 'initial' and 'revert' cannot be used here: once the property is specified at all,
+      Chromium stops deriving it from the attribute
+    - Not wrapped in ':where()' on purpose, so it still wins against the 'all: revert' rules for
+      'pre' and 'dialog:modal' further down
+    - Firefox and WebKit read the attribute directly and ignore this declaration
+ */
+[lang] {
+    -webkit-locale: attr(lang);
+}
+
 /* Preferred box-sizing value */
 *,
 *::before,
